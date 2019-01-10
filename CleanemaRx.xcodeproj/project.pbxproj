@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		6C5CDE2021E5E2B600A283FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CDE1F21E5E2B600A283FB /* AppDelegate.swift */; };
-		6C5CDE2221E5E2B600A283FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5CDE2121E5E2B600A283FB /* ViewController.swift */; };
 		6C5CDE2521E5E2B600A283FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CDE2321E5E2B600A283FB /* Main.storyboard */; };
 		6C5CDE2721E5E2B700A283FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CDE2621E5E2B700A283FB /* Assets.xcassets */; };
 		6C5CDE2A21E5E2B700A283FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5CDE2821E5E2B700A283FB /* LaunchScreen.storyboard */; };
 		6C686DAD4FB54F3DE5F4829A /* Pods_CleanemaRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C81535D448971FE6009E390 /* Pods_CleanemaRx.framework */; };
+		6CBFEF9C21E7791F00D6E649 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFEF9B21E7791F00D6E649 /* env.swift */; };
+		6CBFEFA221E77E3700D6E649 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFEFA121E77E3700D6E649 /* Movie.swift */; };
+		6CBFEFA421E780A000D6E649 /* MovieItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFEFA321E780A000D6E649 /* MovieItemController.swift */; };
+		6CBFEFA821E7835700D6E649 /* PopularTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFEFA721E7835700D6E649 /* PopularTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C5CDE1C21E5E2B600A283FB /* CleanemaRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanemaRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5CDE1F21E5E2B600A283FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C5CDE2121E5E2B600A283FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6C5CDE2421E5E2B600A283FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C5CDE2621E5E2B700A283FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C5CDE2921E5E2B700A283FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C5CDE2B21E5E2B700A283FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C81535D448971FE6009E390 /* Pods_CleanemaRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanemaRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CBFEF9B21E7791F00D6E649 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
+		6CBFEFA121E77E3700D6E649 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		6CBFEFA321E780A000D6E649 /* MovieItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemController.swift; sourceTree = "<group>"; };
+		6CBFEFA721E7835700D6E649 /* PopularTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableController.swift; sourceTree = "<group>"; };
 		941971D025131517359475F1 /* Pods-CleanemaRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanemaRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanemaRx/Pods-CleanemaRx.release.xcconfig"; sourceTree = "<group>"; };
 		CDFC89DC876F3D7ACD0C5B4D /* Pods-CleanemaRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanemaRx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanemaRx/Pods-CleanemaRx.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +49,7 @@
 		6C5CDE1321E5E2B600A283FB = {
 			isa = PBXGroup;
 			children = (
+				6CBFEF9B21E7791F00D6E649 /* env.swift */,
 				6C5CDE1E21E5E2B600A283FB /* CleanemaRx */,
 				6C5CDE1D21E5E2B600A283FB /* Products */,
 				EE19196C0504F782E369E2FE /* Pods */,
@@ -61,14 +68,32 @@
 		6C5CDE1E21E5E2B600A283FB /* CleanemaRx */ = {
 			isa = PBXGroup;
 			children = (
+				6CBFEF9E21E77C2500D6E649 /* Controller */,
+				6CBFEF9D21E77C1A00D6E649 /* Model */,
 				6C5CDE1F21E5E2B600A283FB /* AppDelegate.swift */,
-				6C5CDE2121E5E2B600A283FB /* ViewController.swift */,
 				6C5CDE2321E5E2B600A283FB /* Main.storyboard */,
 				6C5CDE2621E5E2B700A283FB /* Assets.xcassets */,
 				6C5CDE2821E5E2B700A283FB /* LaunchScreen.storyboard */,
 				6C5CDE2B21E5E2B700A283FB /* Info.plist */,
 			);
 			path = CleanemaRx;
+			sourceTree = "<group>";
+		};
+		6CBFEF9D21E77C1A00D6E649 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CBFEFA121E77E3700D6E649 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CBFEF9E21E77C2500D6E649 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6CBFEFA321E780A000D6E649 /* MovieItemController.swift */,
+				6CBFEFA721E7835700D6E649 /* PopularTableController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		B94155624C444D26087A3AD3 /* Frameworks */ = {
@@ -100,6 +125,7 @@
 				6C5CDE1921E5E2B600A283FB /* Frameworks */,
 				6C5CDE1A21E5E2B600A283FB /* Resources */,
 				3CF2C7C9F4BF3CD5D7D066CB /* [CP] Embed Pods Frameworks */,
+				6CBFEF9A21E773A500D6E649 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -203,6 +229,23 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleanemaRx/Pods-CleanemaRx-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6CBFEF9A21E773A500D6E649 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -210,8 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C5CDE2221E5E2B600A283FB /* ViewController.swift in Sources */,
+				6CBFEFA821E7835700D6E649 /* PopularTableController.swift in Sources */,
 				6C5CDE2021E5E2B600A283FB /* AppDelegate.swift in Sources */,
+				6CBFEF9C21E7791F00D6E649 /* env.swift in Sources */,
+				6CBFEFA221E77E3700D6E649 /* Movie.swift in Sources */,
+				6CBFEFA421E780A000D6E649 /* MovieItemController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.blinfoldking.CleanemaRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -387,7 +433,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.blinfoldking.CleanemaRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
