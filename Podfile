@@ -1,18 +1,20 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+workspace 'CleanemaRX.xcworkspace'
+
 def rx_swift
   pod 'RxSwift', '~> 4.0'
 end
 
 target 'CleanemaRx' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  project 'CleanemaRx.xcodeproj'
   use_frameworks!
   rx_swift
-  # Pods for CleanemaRx
 end
 
 target 'Domain' do
+  project 'Domain/Domain.xcodeproj'
   use_frameworks!
   rx_swift
 end
