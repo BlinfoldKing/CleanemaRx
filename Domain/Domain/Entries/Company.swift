@@ -1,5 +1,5 @@
 //
-//  Company.swift
+//  File.swift
 //  Domain
 //
 //  Created by Ganesha Danu on 11/01/19.
