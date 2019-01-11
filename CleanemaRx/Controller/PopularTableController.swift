@@ -18,6 +18,7 @@ class PopularTableController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         movies.append(Movie(title: "Hello"))
         movies.append(Movie())
+        print()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

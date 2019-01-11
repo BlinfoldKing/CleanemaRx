@@ -16,7 +16,23 @@
 		6CBFEFA221E77E3700D6E649 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFEFA121E77E3700D6E649 /* Movie.swift */; };
 		6CBFEFA421E780A000D6E649 /* MovieItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFEFA321E780A000D6E649 /* MovieItemController.swift */; };
 		6CBFEFA821E7835700D6E649 /* PopularTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFEFA721E7835700D6E649 /* PopularTableController.swift */; };
+		6CDCF12721E8A651009B33A7 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDCF12521E8A64B009B33A7 /* Domain.framework */; };
+		6CDCF12821E8A651009B33A7 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDCF12521E8A64B009B33A7 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6CDCF12921E8A651009B33A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6CDCF12821E8A651009B33A7 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6C5CDE1C21E5E2B600A283FB /* CleanemaRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanemaRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +46,7 @@
 		6CBFEFA121E77E3700D6E649 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		6CBFEFA321E780A000D6E649 /* MovieItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemController.swift; sourceTree = "<group>"; };
 		6CBFEFA721E7835700D6E649 /* PopularTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableController.swift; sourceTree = "<group>"; };
+		6CDCF12521E8A64B009B33A7 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941971D025131517359475F1 /* Pods-CleanemaRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanemaRx.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanemaRx/Pods-CleanemaRx.release.xcconfig"; sourceTree = "<group>"; };
 		CDFC89DC876F3D7ACD0C5B4D /* Pods-CleanemaRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanemaRx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanemaRx/Pods-CleanemaRx.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDCF12721E8A651009B33A7 /* Domain.framework in Frameworks */,
 				6C686DAD4FB54F3DE5F4829A /* Pods_CleanemaRx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +117,7 @@
 		B94155624C444D26087A3AD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CDCF12521E8A64B009B33A7 /* Domain.framework */,
 				6C81535D448971FE6009E390 /* Pods_CleanemaRx.framework */,
 			);
 			name = Frameworks;
@@ -126,6 +145,7 @@
 				6C5CDE1A21E5E2B600A283FB /* Resources */,
 				3CF2C7C9F4BF3CD5D7D066CB /* [CP] Embed Pods Frameworks */,
 				6CBFEF9A21E773A500D6E649 /* ShellScript */,
+				6CDCF12921E8A651009B33A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
